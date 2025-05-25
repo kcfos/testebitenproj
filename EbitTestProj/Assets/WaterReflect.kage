@@ -1,0 +1,9 @@
+//kage:unit pixels
+package main
+
+func Fragment(targetCoords vec4, sourceCoords vec2, color vec4) vec4 {
+  
+   // col := imageSrc0At(imageSrc0Origin() + targetCoords.xy); //this does not work like using source does
+     col := imageSrc0At(sourceCoords); // Sample source image directly
+    return col * vec4(.2,.4,1,1)
+}

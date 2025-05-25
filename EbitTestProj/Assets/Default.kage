@@ -1,0 +1,7 @@
+//kage:unit pixels
+package main
+
+func Fragment(targetCoords vec4, sourceCoords vec2, color vec4) vec4 {
+  
+    return imageSrc0At(imageSrc0Origin() + targetCoords.xy); // Sample source image directly
+}
